@@ -1,7 +1,7 @@
 {
-  "name": "joshinkan",
+  "name": "fewo-sellin",
   "version": "1.0.0",
-  "description": "joshinkan.de website",
+  "description": "fewo-sellin.de website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

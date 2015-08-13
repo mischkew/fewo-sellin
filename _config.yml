@@ -1,10 +1,10 @@
 # Site settings
-title: Joshinkan Werder e.V.
+title: Ferien Wohnung Sellin
 
 author: Sven Mischkewitz
 description:
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://joshinkan.de" # the base hostname & protocol for your site
+url: "http://fewo-sellin.de" # the base hostname & protocol for your site
 
 # Build settings
 source: src

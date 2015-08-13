@@ -17,6 +17,12 @@ module.exports = (grunt) ->
           cwd: "src/bower_components/bootstrap-sass/assets/stylesheets/"
           src: ["**"]
           dest: "src/_sass/vendor"
+        },
+        {
+          expand: true
+          cwd: "src/bower_components/bootstrap-sass/assets/javascripts/"
+          src: ["bootstrap.min.js"]
+          dest: "src/javascripts/vendor"
         }]
       glyphicons:
         files: [{
