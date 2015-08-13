@@ -1,32 +1,37 @@
-<header>
+<header class="bar-only">
 
-  <div class="site-header">
+  <nav class="site-nav">
+    <div class="site-title">
+      <a class="site-title-link" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    </div>
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <button
+      type="button"
+      class="navbar-toggle"
+      data-toggle="collapse"
+      data-target="#collapsable"
+      aria-expanded="false">
+      <span class="close flaticon-delete85"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
 
-    <nav class="site-nav">
-
+    <div
+      id="collapsable"
+      class="collapse navbar-collapse">
       <div class="page-links">
         {% assign pages = site.pages | sort: 'order' %}
-        {% for page in pages %}
-          {% if page.title and page.noMenu == nil %}
+        {% for p in pages %}
+          {% if p.title and p.noMenu == nil %}
           <div class="page-link-wrapper">
-            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            <a class="page-link {% if p.url == page.url %}active{% endif %}" href="{{ p.url | prepend: site.baseurl }}">{{ p.title }}</a>
           </div>
           {% endif %}
         {% endfor %}
       </div>
-
-    </nav>
-
-    <div class="contact">
-      <span class="icon facebook"></span>
-      <div class="contact-text">
-        <a href="http://facebook.com{{ site.data.contact.facebook }}" target="_blank">{{ site.data.contact.facebook }}</a>
-      </div>
     </div>
 
-  </div>
-
+  </nav>
 
 </header>

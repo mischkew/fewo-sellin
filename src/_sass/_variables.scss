@@ -2,7 +2,7 @@
 //== Color Scheme
 
 $red: #b44b50;
-$orange: #eb6841;
+$orange: #f5a623;
 $cyan: #00a0b1;
 
 $gray-light: #9B9B9B;
@@ -21,6 +21,11 @@ $font-size-h3: 24px;
 
 $font-weight-thin: 100 !default;
 
+$font-family-sans-serif: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$headings-font-family: "HelveticaNeue-Thin", "Helvetica Neue Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-weight: 100;
+
 //== Glyphicons
 
 $icon-font-path: "../fonts/bootstrap/";
@@ -37,3 +42,5 @@ $enable-fade-in: true;
 $enable-fade-in-up: true;
 $enable-fade-in-left: true;
 $enable-fade-in-right: true;
+
+$enable-bounce-in-down: true;

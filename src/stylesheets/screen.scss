@@ -6,7 +6,7 @@
 @import "variables";
 @import "vendor/bootstrap";
 @import "vendor/animate/animate";
-
+@import "flaticon";
 
 h1, h2, h3 {
   font-weight: $font-weight-thin;
@@ -70,6 +70,10 @@ h1, h2, h3 {
 
 @mixin shadow-smooth() {
   box-shadow: 0px 10px 30px 0px rgba(black, 0.2);
+}
+
+@mixin text-shadow() {
+  text-shadow: 0px 2px 2px rgba(black, 0.8);
 }
 
 @mixin image-overlay() {
@@ -155,7 +159,6 @@ h1, h2, h3 {
 }
 
 .text-block {
-  @extend .text-justify;
   margin-bottom: 20px;
 
   h1,h2,h3,h4,h5,h6 {
@@ -167,6 +170,9 @@ h1, h2, h3 {
     padding: $padding-large-vertical $padding-large-horizontal;
     line-height: $line-height-base * 1.2;
   }
+
+  &.justified { text-align: justify; }
+  &.centered { text-align: center; }
 }
 
 .text-block-image {
@@ -320,20 +326,20 @@ blockquote {
 .icon {
   display: block;
   float: left;
-  width: 35px;
+  width: 36px;
   height: 36px;
   margin: 2px 8px 2px 0;
 
-  &.facebook {
-    background-image: url(../images/icon_facebook.png);
-  }
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 
   &.email {
-    background-image: url(../images/icon_email.png);
+    background-image: url(../images/mail80.svg);
   }
 
   &.phone {
-    background-image: url(../images/icon_phone.png);
+    background-image: url(../images/smartphone24.svg);
   }
 }
 
@@ -361,6 +367,7 @@ blockquote {
 @import
         "footer",
         "header",
+        "landing",
         "card",
         "verein",
         "training/training_overview",
@@ -370,4 +377,3 @@ blockquote {
         "training/joshinkan",
         "contact"
       ;
-
