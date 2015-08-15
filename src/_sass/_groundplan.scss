@@ -1,0 +1,59 @@
+.room-info-wrapper {
+  position: relative;
+}
+
+.groundplan-wrapper {
+
+  &.affix-top, &.affix-bottom {
+    position: absolute;
+    top: 48px;
+  }
+
+  &.affix {
+    top: 72 + 48px;
+  }
+
+  @include max-media($screen-sm) {
+    &.affix-top,
+    &.affix-botom,
+    &.affix {
+      position: static;
+      padding-top: 36px;
+    }
+  }
+
+  img.groundplan {
+    width: 100%;
+  }
+
+  .groundplan-caption {
+    @include make-sm-column(16);
+    @include make-sm-column-offset(4);
+  }
+}
+
+.rooms {
+  @include make-sm-column(11);
+  @include make-sm-column-offset(11);
+
+  @include make-xs-column(20);
+  @include make-xs-column-offset(2);
+}
+
+.room-info {
+  // @include make-xs-column(24);
+  @extend .banner;
+  margin-bottom: 72px;
+
+  .room-title {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .room-showcase {
+    margin-bottom: 24px;
+    img {
+      width: 100%;
+    }
+  }
+}

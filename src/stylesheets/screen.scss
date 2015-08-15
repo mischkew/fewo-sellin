@@ -9,7 +9,8 @@
 @import "fonts/fonts";
 
 h1, h2, h3 {
-  font-weight: $font-weight-thin;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
 }
 
 @mixin max-media($device) {
@@ -405,11 +406,6 @@ blockquote {
         "card",
         "carousel",
         "index",
-        "verein",
-        "training/training_overview",
-        "training/kata_und_bunkai",
-        "training/kobudo",
-        "training/ne_waza",
-        "training/joshinkan",
+        "wohnung",
         "contact"
       ;

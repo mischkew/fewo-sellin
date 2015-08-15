@@ -21,7 +21,7 @@ module.exports = (grunt) ->
         {
           expand: true
           cwd: "src/bower_components/bootstrap-sass/assets/javascripts/"
-          src: ["bootstrap.min.js"]
+          src: ["bootstrap.js"]
           dest: "src/javascripts/vendor"
         }]
       glyphicons:
@@ -57,6 +57,13 @@ module.exports = (grunt) ->
           expand: true
           cwd: "src/bower_components/wowjs/dist"
           src: ["wow.min.js"]
+          dest: "src/javascripts/vendor"
+        }]
+      lodash:
+        files: [{
+          expand: true
+          cwd: "src/bower_components/lodash/"
+          src: ["lodash.min.js"]
           dest: "src/javascripts/vendor"
         }]
 
