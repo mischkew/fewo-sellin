@@ -77,7 +77,7 @@ module.exports = (grunt) ->
           "src/_posts/**/*"
           "src/_sass/**/*"
           "src/stylesheets/**/*"
-          "src/images/*"
+          "src/images/**/*"
           "src/javascripts/**/*"
           "_config.yml"
           "src/**/*.html"

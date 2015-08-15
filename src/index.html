@@ -4,3 +4,120 @@ title: FeWo Sellin
 permalink: /
 order: 0
 ---
+<div
+  id="index-container"
+  class="container-fluid">
+
+  <div class="row">
+
+    <div
+      id="carousel-showcase"
+      class="carousel slide"
+      data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-showcase" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-showcase" data-slide-to="1"></li>
+        <li data-target="#carousel-showcase" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div
+        class="carousel-inner"
+        role="listbox">
+        <div class="item active">
+          <img src="../images/showcase/welcome.jpg" alt="Welcome">
+          <div class="carousel-content">
+            <div class="container">
+              <h1 class="page-title">Willkommen auf FeWo Sellin</h1>
+              <div class="col-md-10 col-md-offset-5">
+                <div class="text-block">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus laborum aut tenetur enim nesciunt facilis doloribus fugiat, consectetur fugit harum voluptates, accusamus iure tempora, quas dignissimos impedit aperiam et exercitationem.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="../images/showcase/wohnzimmer.jpg" alt="Wohnzimmer">
+          <div class="carousel-caption">
+            Das ist das Wohnzimmer.
+          </div>
+        </div>
+        <div class="item">
+          <img src="../images/showcase/kueche.jpg" alt="Küche">
+          <div class="carousel-caption">
+            Das ist die Küche.
+          </div>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a
+        class="left carousel-control"
+        href="#carousel-showcase"
+        role="button"
+        data-slide="prev">
+        <span
+          class="previous"
+          aria-hidden="true">
+        </span>
+      </a>
+      <a
+        class="right carousel-control"
+        href="#carousel-showcase"
+        role="button"
+        data-slide="next">
+        <span
+          class="next"
+          aria-hidden="true">
+        </span>
+      </a>
+    </div>
+
+  </div> <!-- end .row -->
+
+  <div class="row spaced">
+
+    <div class="col-md-14 col-md-offset-5">
+      <div class="text-block">
+        <h3>Besuchen Sie uns</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed rerum veritatis assumenda corporis voluptas repudiandae eos fugiat quod natus necessitatibus dolores enim, maxime molestiae voluptates repellendus quos animi numquam. Nulla!</p>
+      </div>
+      <div class="empty-block large"></div>
+    </div>
+
+    <div class="card-wrapper large center">
+      <div class="card-image-wrapper card-image-gradient">
+        <img src="http://maps.googleapis.com/maps/api/staticmap?center=Sellin+Mönchguter+Straße+3&zoom=15&scale=1&size=512x256&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff2a00%7Clabel:A%7CSellin,+Mönchguter+Straße+3" alt="" />
+      </div>
+      <div class="card-body">
+        <div class="col-sm-12">
+          <div class="card-text-header text-center">
+            Ferienwohnung Sellin
+          </div>
+          <div class="card-text-small text-center">
+            {% markdown %}
+Seepark Baabe 402 \\
+Mönchguter Straße 3 \\
+18586 Sellin \\
+\\
+Willfried Bauer \\
+willfriedbauer@gmx.de \\
++49 172 38 86 606
+            {% endmarkdown %}
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <div class="card-text-small">
+          <p class="empty-block"></p>
+            {% markdown %}
+[Buchungen](/buchen) und Fragen zum Objekt gerne telefonisch oder per Mail.
+            {% endmarkdown %}
+          </div>
+        </div>
+      </div> <!-- end card body -->
+    </div> <!-- end card-wrapper -->
+
+  </div>
+</div> <!-- end .container -->

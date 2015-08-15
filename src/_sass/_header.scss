@@ -22,6 +22,7 @@ header.bar-only {
     color: $gray-dark;
   }
 
+
   .site-nav {
     padding: 12px;
     height: 100%;
@@ -29,10 +30,13 @@ header.bar-only {
     display: inline-block;
   }
 
-  .site-title-link, .page-link {
-    font-size: 32px;
-    font-family: $headings-font-family;
-    font-weight: $headings-font-weight;
+  .navbar-fixed {
+    display: inline-block;
+    width: 100%;
+
+    @include min-media($screen-sm) {
+      display: none;
+    };
   }
 
   .page-links {
@@ -99,6 +103,10 @@ header.bar-only {
   }
 
   .page-link, .site-title-link {
+    font-size: 32px;
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+
     text-decoration: none;
     padding: 4px 12px;
     color: $gray-dark;
@@ -115,6 +123,17 @@ header.bar-only {
       text-decoration: underline;
     }
   }
+
+  .site-title-link {
+    @include branding();
+  }
+
+  @include min-media($screen-sm) {
+    .page-link-wrapper:nth-child(1) > .page-link {
+      @include branding();
+    }
+  }
+
 }
 
 .page-content.navbar-offset {
