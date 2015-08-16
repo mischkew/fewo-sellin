@@ -29,11 +29,73 @@ order: 10
     class="groundplan-wrapper">
     <div class="container">
       <div class="col-sm-10 col-sm-offset-1 col-xs-18 col-xs-offset-3">
-        <img
-          id="groundplan"
-          src="/images/groundplan.jpg"
-          alt="Grundriss"
-          class="groundplan" />
+        <div class="plan-parts">
+
+          <img
+            id="groundplan"
+            src="/images/groundplan.jpg"
+            alt="Grundriss"
+            class="groundplan"
+            usemap="#groundplan-map" />
+
+          <div class="overlays">
+            <img
+              src="/images/groundplan/baeder.png"
+              alt="Baeder Overlay"
+              id="overlay-baeder"
+              data-target="#room-baeder"
+              data-scroll="true"
+              data-scroll-time="300"
+              data-scroll-offset="84" />
+            <img
+              src="/images/groundplan/balkon.png"
+              alt="Balkon Overlay"
+              id="overlay-balkon"
+              data-target="#room-balkon"
+              data-scroll="true"
+              data-scroll-time="300"
+              data-scroll-offset="84" />
+            <img
+              src="/images/groundplan/schlafzimmer.png"
+              alt="Schlafzimmer Overlay"
+              id="overlay-schlafzimmer"
+              data-target="#room-schlafzimmer"
+              data-scroll="true"
+              data-scroll-time="300"
+              data-scroll-offset="84" />
+            <img
+              src="/images/groundplan/wohnzimmer.png"
+              alt="Wohnzimmer Overlay"
+              id="overlay-wohnzimmer"
+              data-target="#room-wohnzimmer"
+              data-scroll="true"
+              data-scroll-time="300"
+              data-scroll-offset="84" />
+            <img
+              src="/images/groundplan/kueche.png"
+              alt="Kueche Overlay"
+              id="overlay-kueche"
+              data-target="#room-kueche"
+              data-scroll="true"
+              data-scroll-time="300"
+              data-scroll-offset="84" />
+          </div> <!-- end .overlays -->
+
+        </div> <!-- end .plan-parts -->
+
+        <map
+          id="groundplan-map"
+          name="groundplan-map">
+          <!-- <area
+            shape="rect"
+            coords="0,0,50,50"
+            alt="shape-wohnzimmer"
+            href="#room-wohnzimmer"
+            data-scroll="true"
+            data-scroll-time="300"
+            data-scroll-offset="84" /> -->
+        </map>
+
         <div class="groundplan-caption">
           <div class="empty-block large"></div>
           <div class="text-block centered">
@@ -44,14 +106,16 @@ order: 10
     </div>
   </div>
 
-  <div class="container-fluid spaced">
+  <div class="container-fluid spaced" id="raeume">
 
     <div class="rooms">
-      <div class="room-info">
+      <div
+        id="room-wohnzimmer"
+        class="room-info">
         <h2 class="room-title">Wohnzimmer</h2>
 
         <div class="room-showcase">
-          <img src="../images/showcase/wohnzimmer.jpg" alt="Wohnzimmer">
+          <img src="../images/rooms/wohnzimmer.jpg" alt="Wohnzimmer">
         </div>
 
         <div class="room-description">
@@ -59,14 +123,15 @@ order: 10
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, quis. Necessitatibus cupiditate dolore eligendi corrupti, quos earum asperiores assumenda ullam vitae modi voluptatum quia, numquam, deleniti in voluptas ad vero?</p>
           </div>
         </div>
+      </div> <!-- end .room-info -->
 
-      </div>
-
-      <div class="room-info">
+      <div
+        id="room-kueche"
+        class="room-info">
         <h2 class="room-title">Küche</h2>
 
         <div class="room-showcase">
-          <img src="../images/showcase/kueche.jpg" alt="Küche">
+          <img src="../images/rooms/kueche.jpg" alt="Küche">
         </div>
 
         <div class="room-description">
@@ -74,14 +139,15 @@ order: 10
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, quis. Necessitatibus cupiditate dolore eligendi corrupti, quos earum asperiores assumenda ullam vitae modi voluptatum quia, numquam, deleniti in voluptas ad vero?</p>
           </div>
         </div>
+      </div> <!-- end .room-info -->
 
-      </div>
-
-      <div class="room-info">
+      <div
+        id="room-schlafzimmer"
+        class="room-info">
         <h2 class="room-title">Schlafzimmer</h2>
 
         <div class="room-showcase">
-          <img src="../images/showcase/schlafzimmer.jpg" alt="Schlafzimmer">
+          <img src="../images/rooms/schlafzimmer.jpg" alt="Schlafzimmer">
         </div>
 
         <div class="room-description">
@@ -89,11 +155,67 @@ order: 10
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, quis. Necessitatibus cupiditate dolore eligendi corrupti, quos earum asperiores assumenda ullam vitae modi voluptatum quia, numquam, deleniti in voluptas ad vero?</p>
           </div>
         </div>
+      </div> <!-- end .room-info -->
 
-      </div>
+      <div
+        id="room-baeder"
+        class="room-info">
+        <h2 class="room-title">Badezimmer</h2>
+
+        <div class="room-showcase">
+          <img src="../images/rooms/bad.jpg" alt="Badezimmer">
+        </div>
+
+        <div class="room-description">
+          <div class="text-block justified">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, quis. Necessitatibus cupiditate dolore eligendi corrupti, quos earum asperiores assumenda ullam vitae modi voluptatum quia, numquam, deleniti in voluptas ad vero?</p>
+          </div>
+        </div>
+      </div> <!-- end .room-info -->
+
+      <div
+        id="room-balkon"
+        class="room-info">
+        <h2 class="room-title">Balkone</h2>
+
+        <div class="room-showcase">
+          <img src="../images/rooms/balkon.jpg" alt="Balkone">
+        </div>
+
+        <div class="room-description">
+          <div class="text-block justified">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, quis. Necessitatibus cupiditate dolore eligendi corrupti, quos earum asperiores assumenda ullam vitae modi voluptatum quia, numquam, deleniti in voluptas ad vero?</p>
+          </div>
+        </div>
+      </div> <!-- end .room-info -->
 
     </div>
 
+  </div>
+</div>
+
+<div id="zum-strand" class="container way-to-sea">
+  <div class="row">
+    <div class="text-block text-block-col centered">
+      <h3>Zum Strand</h3>
+      <div class="empty-block"></div>
+      <div class="text-separator"></div>
+      <!-- <div class="empty-block"></div> -->
+    </div>
+  </div>
+  <div class="col-sm-10 col-sm-offset-7">
+    <div class="text-block justified">
+      {% markdown %}
+Es gibt zwei Möglichkeiten den Ostseestrand zu erreichen.
+In ca. 10 Gehwegminuten über den Selliner Seepark zum Zentrum zur Selliner Seebrücke.
+Zu Fuß in ca. 6 Minuten zum Südstrand. (Entsprechend der Schilderung)
+In den Sommermonaten ist es auch möglich, mit der Kurkarte die See-Bahn zu nutzen. Diese verbindet den Südstrand mit der Seebrücke von Sellin.
+Eine Haltestelle befindet sich unmittelbar an der Ferienwohnung neben der Minigolfanlage.
+      {% endmarkdown %}
+    </div>
+  </div>
+  <div class="col-sm-10 col-sm-offset-1">
+    <!--  close up way to sea map -->
   </div>
 </div>
 
@@ -111,7 +233,7 @@ order: 10
           },
           bottom: function() {
             var footerHeight = $('#footer').outerHeight(true);
-            var wayToSeaHeight = $('#way-to-sea').outerHeight(true);
+            var wayToSeaHeight = $('#zum-strand').outerHeight(true);
 
             return footerHeight + wayToSeaHeight + 48;
           }
@@ -119,30 +241,12 @@ order: 10
       });
     }
 
-    $(document).ready(function() {
-      setupAffix();
-      $(window).on('resize', _.throttle(function() { $('#groundplan-wrapper').affix('checkPosition'); }, 100));
-    })
+    // function setupHighlighting() {
+    //   $('#groundplan').maphilight();
+    // }
+
+    setupAffix();
+    // setupHighlighting();
+    $(window).on('resize', _.throttle(function() { $('#groundplan-wrapper').affix('checkPosition'); }, 100));
   });
 </script>
-
-<div id="way-to-sea" class="container">
-  <div class="text-block-col">
-     <div class="text-separator"></div>
-     <div class="empty-block"></div>
-  </div>
-  <div class="col-sm-10 col-sm-offset-1">
-    <div class="text-block justified">
-      {% markdown %}
-Es gibt zwei Möglichkeiten den Ostseestrand zu erreichen.
-In ca. 10 Gehwegminuten über den Selliner Seepark zum Zentrum zur Selliner Seebrücke.
-Zu Fuß in ca. 6 Minuten zum Südstrand. (Entsprechend der Schilderung)
-In den Sommermonaten ist es auch möglich, mit der Kurkarte die See-Bahn zu nutzen. Diese verbindet den Südstrand mit der Seebrücke von Sellin.
-Eine Haltestelle befindet sich unmittelbar an der Ferienwohnung neben der Minigolfanlage.
-      {% endmarkdown %}
-    </div>
-  </div>
-  <div class="col-sm-10 col-sm-offset-1">
-    <!--  close up way to sea map -->
-  </div>
-</div>

@@ -210,6 +210,10 @@ h1, h2, h3 {
   &.centered { text-align: center; }
 }
 
+.image-and-label {
+  @include image-and-label;
+}
+
 .text-block-image {
   @include image-and-label;
   display: inline-block;

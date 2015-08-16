@@ -22,8 +22,37 @@
     }
   }
 
-  img.groundplan {
+  .groundplan {
     width: 100%;
+  }
+
+  .plan-parts {
+    position: relative;
+  }
+
+  .overlays {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    img {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      @include transition(opacity 0.2s ease-in-out);
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  area {
+    user-select: none;
   }
 
   .groundplan-caption {
@@ -42,8 +71,12 @@
 
 .room-info {
   // @include make-xs-column(24);
-  @extend .banner;
   margin-bottom: 72px;
+
+  img {
+    @extend .banner;
+    max-height: 512px;
+  }
 
   .room-title {
     text-align: center;
