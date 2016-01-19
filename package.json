@@ -14,5 +14,10 @@
     "grunt-contrib-copy": "^0.8.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-exec": "^0.4.6"
+  },
+  "dependencies": {
+    "bower": "~1.5.2",
+    "grunt-cli": "~0.1.13",
+    "jekyll": "~3.0.0-beta1"
   }
 }
